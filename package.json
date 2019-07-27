@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-plugin-js-fallback",
+  "version": "0.1.0",
+  "description": "Gatsby plugin to fallback gracefully when JS is disabled on client side",
+  "main": "index.js",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "graceful degradation",
+    "js fallback"
+  ],
+  "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": ">2.0.0",
+    "react": ">16.8.0"
+  },
+  "repository": "https://github.com/malcolm-kee/gatsby-plugin-js-fallback",
+  "homepage": "https://github.com/malcolm-kee/gatsby-plugin-js-fallback#readme",
+  "bugs": {
+    "url": "https://github.com/malcolm-kee/gatsby-plugin-js-fallback/issues"
+  }
+}
