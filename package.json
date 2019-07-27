@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-js-fallback",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gatsby plugin to fallback gracefully when JS is disabled on client side",
   "main": "index.js",
   "keywords": [

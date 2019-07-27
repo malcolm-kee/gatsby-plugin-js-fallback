@@ -12,7 +12,7 @@ function JsEnabledProvider({ children }) {
   return React.createElement(JsEnabledContext.Provider, { value: isJsEnabled }, children);
 }
 
-exports.wrapPage = function wrapPage() {
+exports.wrapPage = function wrapPage({ element }) {
   return React.createElement(JsEnabledProvider, {}, element);
 };
 
