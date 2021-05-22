@@ -5,9 +5,14 @@ const JsEnabledContext = React.createContext(false);
 function JsEnabledProvider({ children }) {
   const [isJsEnabled, setIsJsEnabled] = React.useState(false);
 
-  React.useLayoutEffect(() => {
-    setIsJsEnabled(true);
-  }, []);
+  if (typeof window !== 'undefined')
+    React.useLayoutEffect(() => {
+      setIsJsEnabled(true);
+    }, []);
+  else
+    React.useEffect(() => {
+      setIsJsEnabled(true);
+    }, []);
 
   return React.createElement(JsEnabledContext.Provider, { value: isJsEnabled }, children);
 }
