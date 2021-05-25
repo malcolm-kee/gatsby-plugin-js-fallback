@@ -5,7 +5,7 @@ const JsEnabledContext = React.createContext(false);
 function JsEnabledProvider({ children }) {
   const [isJsEnabled, setIsJsEnabled] = React.useState(false);
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     setIsJsEnabled(true);
   }, []);
 
